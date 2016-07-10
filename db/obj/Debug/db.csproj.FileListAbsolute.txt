@@ -1,0 +1,10 @@
+c:\users\ayodeji\documents\visual studio 2013\Projects\db\db\bin\Debug\db.exe.config
+c:\users\ayodeji\documents\visual studio 2013\Projects\db\db\obj\Debug\db.csprojResolveAssemblyReference.cache
+c:\users\ayodeji\documents\visual studio 2013\Projects\db\db\obj\Debug\db.FormCreatecontact.resources
+c:\users\ayodeji\documents\visual studio 2013\Projects\db\db\obj\Debug\db.Properties.Resources.resources
+c:\users\ayodeji\documents\visual studio 2013\Projects\db\db\obj\Debug\db.csproj.GenerateResource.Cache
+c:\users\ayodeji\documents\visual studio 2013\Projects\db\db\bin\Debug\db.exe
+c:\users\ayodeji\documents\visual studio 2013\Projects\db\db\bin\Debug\db.pdb
+c:\users\ayodeji\documents\visual studio 2013\Projects\db\db\obj\Debug\db.exe
+c:\users\ayodeji\documents\visual studio 2013\Projects\db\db\obj\Debug\db.pdb
+c:\users\ayodeji\documents\visual studio 2013\Projects\db\db\obj\Debug\db.contactList.resources

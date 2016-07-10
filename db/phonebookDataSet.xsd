@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="phonebookDataSet" targetNamespace="http://tempuri.org/phonebookDataSet.xsd" xmlns:mstns="http://tempuri.org/phonebookDataSet.xsd" xmlns="http://tempuri.org/phonebookDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="phonebookConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="phonebookConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.db.Properties.Settings.GlobalReference.Default.phonebookConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="contactsTableAdapter" GeneratorDataComponentClassName="contactsTableAdapter" Name="contacts" UserDataComponentName="contactsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="phonebookConnectionString (Settings)" DbObjectName="phonebook.contacts" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `f_name`, `l_name`, `email`, `phone` FROM `contacts`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="f_name" DataSetColumn="f_name" />
+              <Mapping SourceColumn="l_name" DataSetColumn="l_name" />
+              <Mapping SourceColumn="email" DataSetColumn="email" />
+              <Mapping SourceColumn="phone" DataSetColumn="phone" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="phonebookDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="phonebookDataSet" msprop:Generator_UserDSName="phonebookDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="contacts" msprop:Generator_TableClassName="contactsDataTable" msprop:Generator_TableVarName="tablecontacts" msprop:Generator_TablePropName="contacts" msprop:Generator_RowDeletingName="contactsRowDeleting" msprop:Generator_RowChangingName="contactsRowChanging" msprop:Generator_RowEvHandlerName="contactsRowChangeEventHandler" msprop:Generator_RowDeletedName="contactsRowDeleted" msprop:Generator_UserTableName="contacts" msprop:Generator_RowChangedName="contactsRowChanged" msprop:Generator_RowEvArgName="contactsRowChangeEvent" msprop:Generator_RowClassName="contactsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="f_name" msprop:Generator_ColumnVarNameInTable="columnf_name" msprop:Generator_ColumnPropNameInRow="f_name" msprop:Generator_ColumnPropNameInTable="f_nameColumn" msprop:Generator_UserColumnName="f_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="l_name" msprop:Generator_ColumnVarNameInTable="columnl_name" msprop:Generator_ColumnPropNameInRow="l_name" msprop:Generator_ColumnPropNameInTable="l_nameColumn" msprop:Generator_UserColumnName="l_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email" msprop:Generator_ColumnVarNameInTable="columnemail" msprop:Generator_ColumnPropNameInRow="email" msprop:Generator_ColumnPropNameInTable="emailColumn" msprop:Generator_UserColumnName="email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="phone" msprop:Generator_ColumnVarNameInTable="columnphone" msprop:Generator_ColumnPropNameInRow="phone" msprop:Generator_ColumnPropNameInTable="phoneColumn" msprop:Generator_UserColumnName="phone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
